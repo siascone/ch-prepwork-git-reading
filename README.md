@@ -62,7 +62,7 @@ Control Systems, check out [this excellent and detailed reading][git-reading].
 ### The Three States of Git
 
 So, how do we actually take advantage of Git's version control system? First,
-lets learn about the three states of Git.
+let's learn about the three states of Git.
 
 ![git-stages][git-stages]
 
@@ -90,23 +90,23 @@ Ok, so how do we actually stage and commit files?
 
 1. `git init`
     - When you first begin a project, use `git init` to setup the project as a 
-    git repository. You should do this before you write any code.
+      git repository. You should do this before you write any code.
 
-    - First `cd` into your porject's folder then run the command `git init`
+    - First `cd` into your project's folder then run the command `git init`
 
-    - NOTE: whatever folder you are in when you run `git init` is the folder that 
-    will become a git repository. If you happen to `git init` an unintended 
-    folder you can always correct this by removing the `.git` file that was 
-    was created when you ran `git init`.
+    - NOTE: whatever folder you are in when you run `git init` is the folder 
+      that will become a git repository. If you happen to `git init` an 
+      unintended folder you can always correct this by removing the `.git` file 
+      that was was created when you ran `git init`.
 
-    - To remove the `.git` file run the following comand in the folder that you
-        no longer want to be a git repositroy.
+    - To remove the `.git` file run the following command in the folder that you
+        no longer want to be a git repository.
 
         - `rm -rf .git`
 
-        - be very careful when using `rm -rf` this is a command that removes 
-        removes folders permantely. They don't go the the trash first, they are
-        just gone. 
+        - NOTE: be very careful when using `rm -rf` this is a command that 
+          removes removes folders permanently. They don't go the the trash first, 
+          they are just gone. 
 
 2. `git status`
     - After you have initialized a project as a git repository and start making
@@ -114,7 +114,7 @@ Ok, so how do we actually stage and commit files?
       `git status`. 
 
     - `git status` will display a list of files that have been modified since 
-      the last commit. If you have not commited anything yet you will see that 
+      the last commit. If you have not committed anything yet you will see that 
       all of the files you have created are listed.
 
     ```bash
@@ -140,7 +140,7 @@ Ok, so how do we actually stage and commit files?
     - Use `git add` to add files you have modified to the git staging area.
 
     - When you `git add` a file, the next time you commit, this version of the 
-      file will be saved in the git repoistory.
+      file will be saved in the git repository.
     
     - NOTE: `git add` only adds the changes you have made thus far. This means 
       that when you add a file's changes to staging, if you then make more 
@@ -183,7 +183,7 @@ Ok, so how do we actually stage and commit files?
     ```   
 
 4. `git commit`
-    - Use `git commit` to save any modified files that habe been staged (i.e. 
+    - Use `git commit` to save any modified files that have been staged (i.e. 
       `git add`ed) into the git history. 
 
     - A commit is a checkpoint that you can return to later if your code gets
@@ -198,28 +198,28 @@ Ok, so how do we actually stage and commit files?
       undo any major mistakes.
 
     - You will be hard-pressed to over-commit when starting out. You probably 
-      want to commit at least once every 5min. You may commit more often if you 
-      add quick-to-write features.
+      want to commit at least once every 5 minutes. You may commit more often if 
+      you add quick-to-write features.
 
     - `git reset`
         - If you add something you don't want to add, and would like to unstage 
           all staged changes (so that the staged files return to "Changes not 
           staged for commit"), use `git reset`.
 
-    - Check out [this post][chris-beams] by Chris Beams for notes on writting 
+    - Check out [this post][chris-beams] by Chris Beams for notes on writing 
       good commit messages.
 
       [chris-beams]: http://chris.beams.io/posts/git-commit/.
 
 ## GitHub
 
-GitHub is a web service that integrates git software behind the sceens and
-allows you to remotely host porjects that are git repositories.
+GitHub is a web service that integrates git software behind the scenes and
+allows you to remotely host projects that are git repositories.
 
 GitHub is also a networking site for developers where you can: 
 - Have a profile 
-- Publically list your project repositories
-- Market yor project and share your code
+- Publicly list your project repositories
+- Market your project and share your code
 - Collaborate with other developers on their code
 
 ### Local vs. Remote Repositories
@@ -273,16 +273,16 @@ GitHub is also a networking site for developers where you can:
 ### Pushing and pulling code
 
 - `git push`
-    - This is a short hand command for `git push origin <current_branch>` and it 
+    - This is a shorthand command for `git push origin <current_branch>` and it 
       will push any recent changes that you have staged and commited from your 
       local repo to your remote repo on GitHub
 
-    - In the begining `<current_branch>` will most likely be `main`. As you 
+    - In the beginning `<current_branch>` will most likely be `main`. As you 
       start making your portfolio projects you will learn more about `branch`es 
       and feature branching workflow
 
 - `git pull`
-    - This command will retreive any changes that your remote repo has and
+    - This command will retrieve any changes that your remote repo has and
       **pull** them down to your local repo.
     
     - Once you start pair programming you will use this command quite 
@@ -317,7 +317,7 @@ the repo
 To add a collaborator to a GitHub repo:
 
 1. Navigate to the `settings` tab of the repo's dashboard and select 
-  `Collaborators` from the lefthand menu.
+  `Collaborators` from the left hand menu.
 
 2. Click the green `Add people` button
 
@@ -326,7 +326,7 @@ To add a collaborator to a GitHub repo:
   - An email will be sent to your collaborator asking them to accept the 
     invitation.
 
-4. Once a collaboration invitaiton has been accepted all collaborators can
+4. Once a collaboration invitation has been accepted all collaborators can
   `git clone`, `git push` and `git pull`. 
 
 ### Useful Git Commands and Vocabulary
