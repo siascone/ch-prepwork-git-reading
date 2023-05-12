@@ -1,5 +1,5 @@
 # Git and GitHub
-
+<!-- start git -->
 ## Git
 
 ### What is Git?
@@ -211,6 +211,10 @@ Ok, so how do we actually stage and commit files?
 
       [chris-beams]: http://chris.beams.io/posts/git-commit/.
 
+<!-- git end -->
+
+<!-- GitHub start -->
+
 ## GitHub
 
 GitHub is a web service that integrates git software behind the scenes and
@@ -329,6 +333,10 @@ To add a collaborator to a GitHub repo:
 4. Once a collaboration invitation has been accepted all collaborators can
   `git clone`, `git push` and `git pull`. 
 
+<!-- GitHub end -->
+
+<!-- Git Vocab start -->
+
 ### Useful Git Commands and Vocabulary
 
 #### Local Vocabulary
@@ -399,3 +407,5 @@ To add a collaborator to a GitHub repo:
     - Sets local main branch to track remote main branch
 - `git pull <remote> <branch>`
     - Fetches and merges a remote branch into current working directory
+
+<!-- Git Vocab end -->
